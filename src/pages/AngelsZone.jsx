@@ -2,11 +2,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaFeatherAlt } from "react-icons/fa"; // Extra icon if needed
 import AmbientMusic from "../components/AngelsContent/AmbientMusic";
-import AnimeCharacters from "../components/AnimeContent/AnimeCharacters";
+import AnimeCharacters from "../components/Angels/Angels";
 
-const defaultBackgrounds = [
-  "/assets/angel.mp4",
-];
+const defaultBackgrounds = ["/assets/angel.mp4"];
 
 // 🌟 List of Quotes
 const quotes = [
@@ -64,7 +62,7 @@ export default function AngelsZone() {
           key={selectedVideo}
           autoPlay
           loop
-          muted
+          muted={false} // ✅ Background video will now have audio!
           playsInline
           className="absolute w-full h-full object-cover transition-opacity duration-[1500ms]"
           initial="hidden"
@@ -91,7 +89,7 @@ export default function AngelsZone() {
       </motion.div>
 
       {/* 🔹 Ambient Music */}
-      
+
       {/* 🔹 Animated "Angels Zone" Title with Real Wings */}
       <motion.div
         className="absolute top-20 left-72 text-white z-10 flex items-center space-x-3"
@@ -112,7 +110,7 @@ export default function AngelsZone() {
           className="text-6xl font-bold tracking-wide"
           animate={{ scale: [1, 1.05, 1], transition: { duration: 2, repeat: Infinity } }}
         >
-          Angels Zone
+          春馬 Zone
         </motion.h1>
 
         {/* Right Wing */}
