@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import EvilCharacters from "../components/Evils/Evils";
 
 const quotes = [
   "🔥 In darkness, we find clarity.",

@@ -126,6 +126,13 @@
         "image": "/gaming/images/arthur.jpg",
         "video": "/gaming/clips/arthur.mp4",
         "background": "/gaming/backgrounds/arthur-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Monster",
+        "image": "/anime/images/monester.jpg",
+        "video": "/anime/clips/monster.mp4",
+        "background": "/anime/backgrounds/monster-bg.mp4"
       }
     ]
   }
