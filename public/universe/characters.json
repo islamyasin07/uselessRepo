@@ -1,0 +1,133 @@
+{
+    "characters": [
+      {
+        "category": "anime",
+        "name": "Itachi Uchiha",
+        "image": "/anime/images/itachi.jpg",
+        "video": "/anime/clips/itachi.mp4",
+        "background": "/anime/backgrounds/itachi-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Gojo Satoru",
+        "image": "/anime/images/gojo.jpg",
+        "video": "/anime/clips/gojo.mp4",
+        "background": "/anime/backgrounds/gojo-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Levi Ackerman",
+        "image": "/anime/images/levi.jpg",
+        "video": "/anime/clips/levi.mp4",
+        "background": "/anime/backgrounds/levi-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Kakashi Hatake",
+        "image": "/anime/images/kakashi.jpg",
+        "video": "/anime/clips/kakashi.mp4",
+        "background": "/anime/backgrounds/kakashi-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Lelouch Lamperouge",
+        "image": "/anime/images/lelouch.jpg",
+        "video": "/anime/clips/lelouch.mp4",
+        "background": "/anime/backgrounds/lelouch-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Goku",
+        "image": "/anime/images/goku.jpg",
+        "video": "/anime/clips/goku.mp4",
+        "background": "/anime/backgrounds/goku-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Naruto Uzumaki",
+        "image": "/anime/images/naruto.jpg",
+        "video": "/anime/clips/naruto.mp4",
+        "background": "/anime/backgrounds/naruto-bg.mp4"
+      },
+      {
+        "category": "anime",
+        "name": "Tanjiro Kamado",
+        "image": "/anime/images/tanjiro.jpg",
+        "video": "/anime/clips/tanjiro.mp4",
+        "background": "/anime/backgrounds/tanjiro-bg.mp4"
+      },
+      {
+        "category": "singer",
+        "name": "Alan Walker",
+        "image": "/singers/images/alan.jpg",
+        "video": "/singers/clips/alan.mp4",
+        "background": "/singers/backgrounds/alan-bg.mp4"
+      },
+      {
+        "category": "singer",
+        "name": "The Weeknd",
+        "image": "/singers/images/weekend.jpg",
+        "video": "/singers/clips/weekend.mp4",
+        "background": "/singers/backgrounds/weekend-bg.mp4"
+      },
+      {
+        "category": "singer",
+        "name": "Juice WRLD",
+        "image": "/singers/images/juice.jpg",
+        "video": "/singers/clips/juice.mp4",
+        "background": "/singers/backgrounds/juice-bg.mp4"
+      },
+      {
+        "category": "singer",
+        "name": "XXXTENTACION",
+        "image": "/singers/images/xxxtentacion.jpg",
+        "video": "/singers/clips/xxxtentacion.mp4",
+        "background": "/singers/backgrounds/xxxtentacion-bg.mp4"
+      },
+      {
+        "category": "singer",
+        "name": "Eminem",
+        "image": "/singers/images/eminem.jpg",
+        "video": "/singers/clips/eminem.mp4",
+        "background": "/singers/backgrounds/eminem-bg.mp4"
+      },
+      
+      {
+        "category": "gaming",
+        "name": "Leon Kennedy",
+        "image": "/gaming/images/leon.jpg",
+        "video": "/gaming/clips/leon.mp4",
+        "background": "/gaming/backgrounds/leon-bg.mp4"
+      },
+   
+      {
+        "category": "gaming",
+        "name": "Master Chief",
+        "image": "/gaming/images/master-chief.jpg",
+        "video": "/gaming/clips/master-chief.mp4",
+        "background": "/gaming/backgrounds/master-chief-bg.mp4"
+      },
+      {
+        "category": "gaming",
+        "name": "Geralt of Rivia",
+        "image": "/gaming/images/geralt.jpg",
+        "video": "/gaming/clips/geralt.mp4",
+        "background": "/gaming/backgrounds/geralt-bg.mp4"
+      },
+      {
+        "category": "gaming",
+        "name": "Ezio Auditore",
+        "image": "/gaming/images/ezio.jpg",
+        "video": "/gaming/clips/ezio.mp4",
+        "background": "/gaming/backgrounds/ezio-bg.mp4"
+      },
+      {
+        "category": "gaming",
+        "name": "Arthur Morgan",
+        "image": "/gaming/images/arthur.jpg",
+        "video": "/gaming/clips/arthur.mp4",
+        "background": "/gaming/backgrounds/arthur-bg.mp4"
+      }
+    ]
+  }
+  
