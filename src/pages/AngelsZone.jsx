@@ -1,51 +1,90 @@
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaFeatherAlt } from "react-icons/fa"; // Extra icon if needed
-import AmbientMusic from "../components/AngelsContent/AmbientMusic";
+import { motion } from "framer-motion";
 import AnimeCharacters from "../components/Angels/Angels";
+import RealmPanel from "../components/RealmPanel";
+import SceneStrip from "../components/SceneStrip";
 
-const defaultBackgrounds = ["/assets/angel.mp4"];
+const defaultBackground = "/assets/angel.mp4";
 
-// 🌟 List of Quotes
 const quotes = [
-  "✨ The soul that sees beauty may sometimes walk alone.",
-  "🌿 Peace comes from within. Do not seek it without.",
-  "🌌 Angels are all around us, all the time, in the very air we breathe.",
-  "💫 Within you is the light of a thousand suns.",
-  "🕊️ Let your dreams be your wings.",
+  "The soul that sees beauty may sometimes walk alone.",
+  "Peace comes from within. Do not seek it without.",
+  "Angels are all around us in the quiet moments.",
+  "Within you is the light of a thousand suns.",
+  "Let your dreams be your wings.",
 ];
 
-// ✨ Fade-in effect for quotes
+const scenes = [
+  {
+    name: "Heaven Gate",
+    mood: "Pure",
+    video: "/assets/angel.mp4",
+    description: "Soft light, wings, and a quiet sky for the calm side.",
+  },
+  {
+    name: "Dawn Bloom",
+    mood: "Hope",
+    video: "/assets/dawn.mp4",
+    description: "A warmer opening scene for peaceful character moments.",
+  },
+  {
+    name: "Dream Drift",
+    mood: "Float",
+    video: "/assets/girl.mp4",
+    description: "A cinematic glow for music and soft anime profiles.",
+  },
+  {
+    name: "Silver Memory",
+    mood: "Still",
+    video: "/assets/short.mp4",
+    description: "Short, bright ambience for a slower visual rhythm.",
+  },
+];
+
+const realmStats = [
+  { label: "Aura", value: "98" },
+  { label: "Calm", value: "S+" },
+  { label: "Light", value: "12K" },
+];
+
+const features = [
+  {
+    icon: "power",
+    title: "Living Backgrounds",
+    body: "Every selected soul can replace the whole world behind the interface.",
+  },
+  {
+    icon: "focus",
+    title: "Searchable Vault",
+    body: "Filter by anime, music, gaming, or realm scenes without leaving the page.",
+  },
+  {
+    icon: "quote",
+    title: "Rotating Guidance",
+    body: "The quote banner keeps the page moving even before a card is opened.",
+  },
+];
+
 const fadeIn = {
   hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-// 🌠 Crossfade animation for background videos
-const fadeTransition = {
+const backgroundFade = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1.5 } },
-};
-
-// 🎵 Smooth Text Animation
-const textAnimation = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { duration: 1.5, type: "spring", stiffness: 100 },
-  },
+  visible: { opacity: 1, transition: { duration: 1.1 } },
 };
 
 export default function AngelsZone() {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
-  const [selectedVideo, setSelectedVideo] = useState(defaultBackgrounds[0]); // Holds the current background
+  const [selectedVideo, setSelectedVideo] = useState(defaultBackground);
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
-  // 📜 Change Quote Every 8 Seconds
   useEffect(() => {
     const quoteInterval = setInterval(() => {
-      setCurrentQuoteIndex((prev) => (prev + 1) % quotes.length);
+      setCurrentQuoteIndex((previous) => (previous + 1) % quotes.length);
     }, 8000);
+
     return () => clearInterval(quoteInterval);
   }, []);
 
@@ -54,77 +93,104 @@ export default function AngelsZone() {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="relative w-screen h-screen flex flex-col justify-start items-center text-white p-10"
+      className="relative min-h-screen overflow-hidden px-4 py-5 text-white sm:px-8 lg:px-10"
     >
-      {/* 🔹 Background Video - Smooth Crossfade */}
-      <div className="absolute top-0 left-0 w-screen h-screen overflow-hidden">
+      <div className="fixed inset-0 overflow-hidden">
         <motion.video
           key={selectedVideo}
           autoPlay
           loop
-          muted={false} // ✅ Background video will now have audio!
+          muted
           playsInline
-          className="absolute w-full h-full object-cover transition-opacity duration-[1500ms]"
+          className="h-full w-full object-cover"
           initial="hidden"
           animate="visible"
-          variants={fadeTransition}
+          variants={backgroundFade}
         >
           <source src={selectedVideo} type="video/mp4" />
         </motion.video>
       </div>
 
-      {/* 🔹 Dark Overlay for Readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-950/84 via-sky-950/18 to-slate-950/92" />
 
-      {/* 🎭 Animated Quotes Section */}
-      <motion.div
-        key={currentQuoteIndex}
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
-        variants={fadeIn}
-        className="absolute top-10 text-center text-xl font-semibold text-white bg-white/10 backdrop-blur-md px-6 py-3 rounded-lg shadow-lg"
-      >
-        {quotes[currentQuoteIndex]}
-      </motion.div>
+      <div className="relative z-10 mx-auto max-w-7xl pb-12 pt-20 md:pt-6">
+        <header className="flex min-h-[72vh] flex-col justify-center gap-7">
+          <div className="max-w-3xl">
+            <p className="text-xs font-black uppercase tracking-[0.34em] text-sky-200/80">
+              Angelic realm
+            </p>
+            <div className="mt-4 flex items-center gap-3">
+              <motion.img
+                src="/assets/wing-left.webp"
+                alt=""
+                className="h-12 w-12 -rotate-12 object-contain sm:h-16 sm:w-16"
+                animate={{ y: [0, -5, 0] }}
+                transition={{ duration: 2.2, repeat: Infinity }}
+              />
+              <h1 className="text-5xl font-black tracking-normal text-white drop-shadow-2xl sm:text-7xl">
+                Angel Zone
+              </h1>
+            </div>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-white/74 sm:text-lg">
+              A cinematic mood universe for bright characters, music souls, and quiet dream
+              scenes. Start with the atmosphere, then dive into the vault.
+            </p>
+          </div>
 
-      {/* 🔹 Ambient Music */}
+          <div className="grid gap-3 lg:grid-cols-[1fr_0.7fr]">
+            <motion.div
+              key={currentQuoteIndex}
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
+              className="rounded-lg border border-white/15 bg-white/10 px-5 py-4 text-sm font-semibold leading-6 text-white shadow-lg backdrop-blur-xl sm:text-base"
+            >
+              {quotes[currentQuoteIndex]}
+            </motion.div>
 
-      {/* 🔹 Animated "Angels Zone" Title with Real Wings */}
-      <motion.div
-        className="absolute top-20 left-72 text-white z-10 flex items-center space-x-3"
-        initial="hidden"
-        animate="visible"
-        variants={textAnimation}
-      >
-        {/* Left Wing */}
-        <motion.img
-          src="/assets/wing-left.webp"
-          alt="Left Angel Wing"
-          className="w-16 h-16 transform -rotate-12"
-          animate={{ y: [0, -5, 0], transition: { duration: 2, repeat: Infinity } }}
-        />
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#scenes"
+                className="rounded-lg bg-sky-300 px-5 py-3 text-sm font-black text-slate-950 shadow-xl shadow-sky-950/30 transition hover:bg-sky-200"
+              >
+                Explore scenes
+              </a>
+              <a
+                href="#vault"
+                className="rounded-lg border border-white/15 bg-white/10 px-5 py-3 text-sm font-black text-white backdrop-blur-xl transition hover:bg-white/20"
+              >
+                Open vault
+              </a>
+            </div>
+          </div>
+        </header>
 
-        {/* Title with Smooth Animation */}
-        <motion.h1
-          className="text-6xl font-bold tracking-wide"
-          animate={{ scale: [1, 1.05, 1], transition: { duration: 2, repeat: Infinity } }}
-        >
-          春馬 Zone
-        </motion.h1>
+        <div className="space-y-8">
+          <section id="scenes" className="scroll-mt-24">
+            <SceneStrip
+              accent="sky"
+              scenes={scenes}
+              activeScene={selectedVideo}
+              onSceneChange={setSelectedVideo}
+            />
+          </section>
 
-        {/* Right Wing */}
-        <motion.img
-          src="/assets/right-wing.png"
-          alt="Right Angel Wing"
-          className="w-16 h-16 transform rotate-12"
-          animate={{ y: [0, -5, 0], transition: { duration: 2, repeat: Infinity } }}
-        />
-      </motion.div>
+          <section id="profile" className="scroll-mt-24">
+            <RealmPanel
+              accent="sky"
+              selectedCharacter={selectedCharacter}
+              stats={realmStats}
+              features={features}
+            />
+          </section>
 
-      {/* Anime Characters Section */}
-      <div className="absolute bottom-20 flex justify-center w-full">
-        <AnimeCharacters setBackground={setSelectedVideo} />
+          <section id="vault" className="scroll-mt-24 rounded-lg border border-white/10 bg-black/22 p-4 shadow-2xl shadow-black/25 backdrop-blur-xl sm:p-5">
+            <AnimeCharacters
+              setBackground={setSelectedVideo}
+              onSelectCharacter={setSelectedCharacter}
+            />
+          </section>
+        </div>
       </div>
     </motion.section>
   );

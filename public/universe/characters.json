@@ -1,133 +1,239 @@
 {
-    "characters": [
-      {
-        "category": "anime",
-        "name": "Itachi Uchiha",
-        "image": "/anime/images/itachi.jpg",
-        "video": "/anime/clips/itachi.mp4",
-        "background": "/anime/backgrounds/itachi-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Gojo Satoru",
-        "image": "/anime/images/gojo.jpg",
-        "video": "/anime/clips/gojo.mp4",
-        "background": "/anime/backgrounds/gojo-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Levi Ackerman",
-        "image": "/anime/images/levi.jpg",
-        "video": "/anime/clips/levi.mp4",
-        "background": "/anime/backgrounds/levi-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Kakashi Hatake",
-        "image": "/anime/images/kakashi.jpg",
-        "video": "/anime/clips/kakashi.mp4",
-        "background": "/anime/backgrounds/kakashi-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Lelouch Lamperouge",
-        "image": "/anime/images/lelouch.jpg",
-        "video": "/anime/clips/lelouch.mp4",
-        "background": "/anime/backgrounds/lelouch-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Goku",
-        "image": "/anime/images/goku.jpg",
-        "video": "/anime/clips/goku.mp4",
-        "background": "/anime/backgrounds/goku-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Naruto Uzumaki",
-        "image": "/anime/images/naruto.jpg",
-        "video": "/anime/clips/naruto.mp4",
-        "background": "/anime/backgrounds/naruto-bg.mp4"
-      },
-      {
-        "category": "anime",
-        "name": "Tanjiro Kamado",
-        "image": "/anime/images/tanjiro.jpg",
-        "video": "/anime/clips/tanjiro.mp4",
-        "background": "/anime/backgrounds/tanjiro-bg.mp4"
-      },
-      {
-        "category": "singer",
-        "name": "Alan Walker",
-        "image": "/singers/images/alan.jpg",
-        "video": "/singers/clips/alan.mp4",
-        "background": "/singers/backgrounds/alan-bg.mp4"
-      },
-      {
-        "category": "singer",
-        "name": "The Weeknd",
-        "image": "/singers/images/weekend.jpg",
-        "video": "/singers/clips/weekend.mp4",
-        "background": "/singers/backgrounds/weekend-bg.mp4"
-      },
-      {
-        "category": "singer",
-        "name": "Juice WRLD",
-        "image": "/singers/images/juice.jpg",
-        "video": "/singers/clips/juice.mp4",
-        "background": "/singers/backgrounds/juice-bg.mp4"
-      },
-      {
-        "category": "singer",
-        "name": "XXXTENTACION",
-        "image": "/singers/images/xxxtentacion.jpg",
-        "video": "/singers/clips/xxxtentacion.mp4",
-        "background": "/singers/backgrounds/xxxtentacion-bg.mp4"
-      },
-      {
-        "category": "singer",
-        "name": "Eminem",
-        "image": "/singers/images/eminem.jpg",
-        "video": "/singers/clips/eminem.mp4",
-        "background": "/singers/backgrounds/eminem-bg.mp4"
-      },
-      
-      {
-        "category": "gaming",
-        "name": "Leon Kennedy",
-        "image": "/gaming/images/leon.jpg",
-        "video": "/gaming/clips/leon.mp4",
-        "background": "/gaming/backgrounds/leon-bg.mp4"
-      },
-   
-      {
-        "category": "gaming",
-        "name": "Master Chief",
-        "image": "/gaming/images/master-chief.jpg",
-        "video": "/gaming/clips/master-chief.mp4",
-        "background": "/gaming/backgrounds/master-chief-bg.mp4"
-      },
-      {
-        "category": "gaming",
-        "name": "Geralt of Rivia",
-        "image": "/gaming/images/geralt.jpg",
-        "video": "/gaming/clips/geralt.mp4",
-        "background": "/gaming/backgrounds/geralt-bg.mp4"
-      },
-      {
-        "category": "gaming",
-        "name": "Ezio Auditore",
-        "image": "/gaming/images/ezio.jpg",
-        "video": "/gaming/clips/ezio.mp4",
-        "background": "/gaming/backgrounds/ezio-bg.mp4"
-      },
-      {
-        "category": "gaming",
-        "name": "Arthur Morgan",
-        "image": "/gaming/images/arthur.jpg",
-        "video": "/gaming/clips/arthur.mp4",
-        "background": "/gaming/backgrounds/arthur-bg.mp4"
-      }
-    ]
-  }
-  
+  "characters": [
+    {
+      "category": "anime",
+      "name": "Gojo Satoru",
+      "role": "Limitless guardian",
+      "image": "/anime/images/gojo.jpg",
+      "video": "/anime/clips/gojo.mp4",
+      "background": "/anime/backgrounds/gojo-bg.mp4",
+      "side": "angel",
+      "bio": "A bright, impossible presence who bends the battlefield into calm confidence.",
+      "stats": [
+        { "label": "Aura", "value": "100" },
+        { "label": "Speed", "value": "S+" },
+        { "label": "Focus", "value": "99" }
+      ]
+    },
+    {
+      "category": "anime",
+      "name": "Levi Ackerman",
+      "role": "Silent blade",
+      "image": "/anime/images/levi.jpg",
+      "video": "/anime/clips/levi.mp4",
+      "background": "/anime/backgrounds/levi-bg.mp4",
+      "side": "angel",
+      "bio": "Clean motion, cold discipline, and the kind of courage that does not need noise.",
+      "stats": [
+        { "label": "Aura", "value": "92" },
+        { "label": "Speed", "value": "S" },
+        { "label": "Focus", "value": "98" }
+      ]
+    },
+    {
+      "category": "anime",
+      "name": "Kakashi Hatake",
+      "role": "Copy tactician",
+      "image": "/anime/images/kakashi.jpg",
+      "video": "/anime/clips/kakashi.mp4",
+      "background": "/anime/backgrounds/kakashi-bg.mp4",
+      "side": "angel",
+      "bio": "A calm strategist with a lightning edge and a soft shadow behind the mask.",
+      "stats": [
+        { "label": "Aura", "value": "89" },
+        { "label": "Mind", "value": "S" },
+        { "label": "Skill", "value": "96" }
+      ]
+    },
+    {
+      "category": "anime",
+      "name": "Goku",
+      "role": "Solar fighter",
+      "image": "/anime/images/goku.jpg",
+      "video": "/anime/clips/goku.mp4",
+      "background": "/anime/backgrounds/goku-bg.mp4",
+      "side": "angel",
+      "bio": "Pure power with a warm heart, built for impossible climbs and final stands.",
+      "stats": [
+        { "label": "Aura", "value": "99" },
+        { "label": "Power", "value": "S+" },
+        { "label": "Hope", "value": "100" }
+      ]
+    },
+    {
+      "category": "singer",
+      "name": "Alan Walker",
+      "role": "Neon wanderer",
+      "image": "/singers/images/alan.jpg",
+      "video": "/singers/clips/alan.mp4",
+      "background": "/singers/backgrounds/alan-bg.mp4",
+      "side": "angel",
+      "bio": "Electronic light, lonely roads, and a pulse that feels like midnight hope.",
+      "stats": [
+        { "label": "Aura", "value": "88" },
+        { "label": "Pulse", "value": "S" },
+        { "label": "Glow", "value": "94" }
+      ]
+    },
+    {
+      "category": "singer",
+      "name": "The Weeknd",
+      "role": "After-hours star",
+      "image": "/singers/images/weekend.jpg",
+      "video": "/singers/clips/weekend.mp4",
+      "background": "/singers/backgrounds/weekend-bg.mp4",
+      "side": "angel",
+      "bio": "A glossy night-drive mood with bright vocals and cinematic shadows.",
+      "stats": [
+        { "label": "Aura", "value": "91" },
+        { "label": "Voice", "value": "S" },
+        { "label": "Style", "value": "97" }
+      ]
+    },
+    {
+      "category": "singer",
+      "name": "Juice WRLD",
+      "role": "Dream poet",
+      "image": "/singers/images/juice.jpg",
+      "video": "/singers/clips/juice.mp4",
+      "background": "/singers/backgrounds/juice-bg.mp4",
+      "side": "angel",
+      "bio": "Melancholy, melody, and a floating sense of honesty that fills the room.",
+      "stats": [
+        { "label": "Aura", "value": "95" },
+        { "label": "Heart", "value": "S+" },
+        { "label": "Flow", "value": "96" }
+      ]
+    },
+    {
+      "category": "gaming",
+      "name": "Leon Kennedy",
+      "role": "Survival agent",
+      "image": "/gaming/images/leon.jpg",
+      "video": "/gaming/clips/leon.mp4",
+      "background": "/gaming/backgrounds/leon-bg.mp4",
+      "side": "angel",
+      "bio": "A clean action profile for danger, focus, and cinematic survival.",
+      "stats": [
+        { "label": "Aura", "value": "90" },
+        { "label": "Aim", "value": "S" },
+        { "label": "Nerve", "value": "98" }
+      ]
+    },
+    {
+      "category": "realm",
+      "name": "Dawn Seraph",
+      "role": "Morning spirit",
+      "video": "/assets/dawn.mp4",
+      "background": "/assets/dawn.mp4",
+      "side": "angel",
+      "bio": "A new original realm presence made from the dawn scene, built for soft transitions.",
+      "stats": [
+        { "label": "Aura", "value": "86" },
+        { "label": "Light", "value": "A+" },
+        { "label": "Calm", "value": "93" }
+      ]
+    },
+    {
+      "category": "realm",
+      "name": "Dream Muse",
+      "role": "Floating memory",
+      "video": "/assets/girl.mp4",
+      "background": "/assets/girl.mp4",
+      "side": "angel",
+      "bio": "A dreamy scene-character that gives the angel side more cinematic variety.",
+      "stats": [
+        { "label": "Aura", "value": "84" },
+        { "label": "Dream", "value": "S" },
+        { "label": "Glow", "value": "90" }
+      ]
+    },
+    {
+      "category": "anime",
+      "name": "Itachi Uchiha",
+      "role": "Red moon exile",
+      "image": "/anime/images/itachi.jpg",
+      "video": "/anime/clips/itachi.mp4",
+      "background": "/anime/backgrounds/itachi-bg.mp4",
+      "side": "evil",
+      "bio": "A tragic shadow with precision, silence, and a storm hidden behind calm eyes.",
+      "stats": [
+        { "label": "Fear", "value": "94" },
+        { "label": "Mind", "value": "S+" },
+        { "label": "Shadow", "value": "99" }
+      ]
+    },
+    {
+      "category": "anime",
+      "name": "Monster",
+      "role": "Abyss creature",
+      "image": "/anime/images/monster.jpg",
+      "video": "/anime/clips/monster.mp4",
+      "background": "/anime/backgrounds/monster-bg.mp4",
+      "side": "evil",
+      "bio": "The branch-born beast, now wired correctly into its own background and profile.",
+      "stats": [
+        { "label": "Fear", "value": "100" },
+        { "label": "Rage", "value": "S+" },
+        { "label": "Noise", "value": "97" }
+      ]
+    },
+    {
+      "category": "singer",
+      "name": "XXXTENTACION",
+      "role": "Storm voice",
+      "image": "/singers/images/xxxtentacion.jpg",
+      "video": "/singers/clips/xxxtentacion.mp4",
+      "background": "/singers/backgrounds/xxxtentacion-bg.mp4",
+      "side": "evil",
+      "bio": "Raw emotion and sharp contrast for a darker music-centered profile.",
+      "stats": [
+        { "label": "Fear", "value": "88" },
+        { "label": "Heart", "value": "S" },
+        { "label": "Storm", "value": "95" }
+      ]
+    },
+    {
+      "category": "singer",
+      "name": "Eminem",
+      "role": "Rapid fire lyricist",
+      "video": "/singers/clips/eminem.mp4",
+      "background": "/assets/midnight.mp4",
+      "side": "evil",
+      "bio": "A wordstorm profile using the available clip and a midnight stage backdrop.",
+      "stats": [
+        { "label": "Fear", "value": "87" },
+        { "label": "Flow", "value": "S+" },
+        { "label": "Impact", "value": "98" }
+      ]
+    },
+    {
+      "category": "realm",
+      "name": "Midnight Wraith",
+      "role": "Void ruler",
+      "video": "/assets/midnight.mp4",
+      "background": "/assets/midnight.mp4",
+      "side": "evil",
+      "bio": "A cold scene-character that turns the evil realm into a night throne.",
+      "stats": [
+        { "label": "Fear", "value": "93" },
+        { "label": "Void", "value": "S" },
+        { "label": "Cold", "value": "96" }
+      ]
+    },
+    {
+      "category": "realm",
+      "name": "Ash Reaper",
+      "role": "Ritual flame",
+      "video": "/assets/Clip.mp4",
+      "background": "/assets/Clip.mp4",
+      "side": "evil",
+      "bio": "An original darker presence made from the sharpest available scene clip.",
+      "stats": [
+        { "label": "Fear", "value": "91" },
+        { "label": "Fire", "value": "S" },
+        { "label": "Chaos", "value": "94" }
+      ]
+    }
+  ]
+}
